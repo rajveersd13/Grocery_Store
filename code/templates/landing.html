@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Grocery_Store_Homepage</title>
+</head>
+
+<body> 
+    <Style>body{
+        background-color: rgb(253, 253, 250);  
+    }</Style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+           <img src="../static/images/logo2.jpg" alt="logo" width="40" height="40" 
+           class="d-inline-block align-top"/>Welcome {{ user }}</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              {% if not signed %}
+              <li class="nav-item">
+                <a class="nav-link" href="/signup">Signup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login">User_Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/admin_login">Admin_Login</a>
+              </li>
+              {% else %}
+              <li class="nav-item">
+                <a class="nav-link" href="/dashboard">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/cart">Cart</a>
+              </li>
+              {% endif %}
+                  <li class="nav-item">
+                    {% if signed %}
+                      <a class="nav-link" href="/logout">Logout</a>
+                    {% endif %}
+                  </li>
+            </ul>
+            <form class="d-flex" role="search">
+           
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          {% for product in products %}
+          <div class="col">
+            <div class="card">
+              <img src="../static/products/{{product.id}}.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">{{product.name}}</h1>
+                <h3 class="card-text">{{product.category_n}}</h3>
+                <h5 class="card-title">Units Available: {{product.units}}</h5>
+                <p class="card-text"><strong>Description:</strong> {{product.description}}</p>
+                <p class="card-text"><strong> Manufacturer Details: </strong> {{product.manufacturer_details}}</p>
+                <p class="card-text"><strong> Shelf_life: </strong> {{product.shelf_life}}</p>
+                <p class="card-text"><strong> Fssai License: </strong> {{product.fsaai_license}}</p>
+                <p class="card-text"><strong> Id:</strong>  {{product.category_id}}</p>
+   
+                <h5 class="card-text"><strong> Disclaimer :</strong>  {{product.disclaimer}}</h5>
+              {% if signed %}
+                  <form method="POST">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text">₹</span>
+                      <span class="input-group-text">{{product.price}}</span>
+                      <input type="number" type="text" class="form-control" placeholder="Number of Items" name="count">
+                      {% if product.units !=0 %}
+                      <button class="btn btn-outline-secondary" type="submit" id="button-addon2" name="product" value="{{product.id}}">Add to Cart</button>
+                      {% else %}
+                      <button class="btn btn-outline-secondary" type="submit" id="button-addon2" name="product" disabled>Out of Stock</button>
+                      {% endif %}
+                    </div>
+                  </form>
+                  {% endif %}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>  
+</body>
+</html>
