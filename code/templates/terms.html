@@ -1,14 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery Store Signup Form Terms and Conditions</title>
-</head>
-<body>
-    <h1>Terms and Conditions</h1>
-    <p>Welcome to Grocery Store  By signing up as a customer, you agree to the following terms and conditions:</p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <style>
+        body {
+            background-color: rgb(254, 253, 253);
+            background-image: url("static/images/img.jpg");
+            background-size: cover; /* Cover the entire screen */
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Fixed background */
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+/* 
+        nav {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 20px;
+        } */
+
+        h1, h2 {
+            color: #007BFF;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        div {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Grocery Store</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/signup">Signup</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div>
+            <h1>Terms and Conditions</h1>
+            <p>Welcome to Grocery Store! By signing up as a customer, you agree to the following terms and conditions:</p>
+            
     <h2>1. Account Registration</h2>
     <p>1.1 You must be at least 16 years old to sign up for an account.</p>
     <p>1.2 You agree to provide accurate and up-to-date information during the registration process.</p>
@@ -36,8 +113,11 @@
     <p>7.1 If you have any questions or concerns regarding these terms and conditions, please contact us at:</p>
     <p>Grocery Store </p>
     <p>Email:21f1006338@ds.study.iitm.ac.in</p>
+           
 
-    <p>By signing up, you acknowledge that you have read, understood, and agree to the above terms and conditions.</p>
+            <p>By signing up, you acknowledge that you have read, understood, and agree to the above terms and conditions.</p>
+        </div>
+    </div>
 </body>
 
 </html>
