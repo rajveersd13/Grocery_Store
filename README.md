@@ -64,4 +64,5 @@ This will launch the application, and you can access it by opening your web brow
 ## Exploring the FreshBasket Application
 
 - **Landing Page:** user  open this page initialy here user can do signup or login to proceed further 
-![Alt text](code\static\Final images of project\Landing Page.png)
+![Alt text](code/static/Final%20images%20of%20project/Landing%20Page.png)
+
