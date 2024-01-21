@@ -62,18 +62,20 @@
           {% for product in products %}
           <div class="col">
             <div class="card">
-              <img src="../static/products/{{product.id}}.png" class="card-img-top" alt="...">
+              <img src="../static/products/{{product.id}}.png" class="card-img-top" alt="..."  height="300" width="300">
               <div class="card-body">
                 <h1 class="card-title">{{product.name}}</h1>
-                <h3 class="card-text">{{product.category_n}}</h3>
-                <h5 class="card-title">Units Available: {{product.units}}</h5>
-                <p class="card-text"><strong>Description:</strong> {{product.description}}</p>
-                <p class="card-text"><strong> Manufacturer Details: </strong> {{product.manufacturer_details}}</p>
-                <p class="card-text"><strong> Shelf_life: </strong> {{product.shelf_life}}</p>
-                <p class="card-text"><strong> Fssai License: </strong> {{product.fsaai_license}}</p>
-                <p class="card-text"><strong> Id:</strong>  {{product.category_id}}</p>
+                <br>
+                <h3 class="card-text"  style="color:red;">{{product.category_n}}</h3>
+                <br>
+                <h5 class="card-title" ></h5><strong style="color: green;">Units Available: </strong> {{product.units}}</h5>
+                <p class="card-text"><strong style="color: green;" >Description:</strong> {{product.description}}</p>
+                <p class="card-text"><strong style="color: green;"> Manufacturer Details: </strong> {{product.manufacturer_details}}</p>
+                <p class="card-text"><strong style="color: green;"> Shelf_life: </strong> {{product.shelf_life}}</p>
+                <p class="card-text"><strong style="color: green;"> Fssai License: </strong> {{product.fsaai_license}}</p>
+                <p class="card-text"><strong style="color: green;"> Id:</strong>  {{product.category_id}}</p>
    
-                <h5 class="card-text"><strong> Disclaimer :</strong>  {{product.disclaimer}}</h5>
+                <h5 class="card-text"><strong style="color: green;"> Disclaimer :</strong>  {{product.disclaimer}}</h5>
               {% if signed %}
                   <form method="POST">
                     <div class="input-group mb-3">
