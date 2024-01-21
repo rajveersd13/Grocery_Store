@@ -10,8 +10,8 @@ In this post, we will explore how to build an online grocery store web applicati
 
 - [Project Details](#project-details)
 - [Setting Up the Project](#setting-up-the-project)
-- [Exploring the FreshBasket Application](#exploring-the-freshbasket-application)
-- [Customizing the FreshBasket Application](#customizing-the-freshbasket-application)
+- [Exploring the Grocery_Store Application](#exploring-the-Grocery_Store-application)
+- [Customizing the Grocery_Store Application](#customizing-the-Grocery_Store-application)
 - [Accomplishments](#accomplishments)
 - [Technical Challenges](#technical-challenges)
 - [Key Takeaways](#key-takeaways)
@@ -52,7 +52,7 @@ This will install all the necessary packages specified in the "requirements.txt"
 
 4. Running the Application
 
-To start the FreshBasket web application, run the following command:
+To start the Grocery_Store web application, run the following command:
 
 ```bash
 $ python app.py
@@ -61,7 +61,7 @@ $ python app.py
 
 This will launch the application, and you can access it by opening your web browser and entering the URL `http://localhost:1111`.
 
-## Exploring the FreshBasket Application
+## Exploring the Grocery_Store Application
 
 - **Landing Page:** user  open this page initialy here user can do signup or login to proceed further 
 ![Alt text](code/static/Final%20images%20of%20project/Landing%20Page.png)
@@ -89,11 +89,11 @@ ADD PRODUCT
 - **Checkout :**
 ![Alt text](code/static/Final%20images%20of%20project/checkout.png)
 
-## Customizing the FreshBasket Application
+## Customizing the Grocery_Store Application
 
 ![App sample](https://miro.medium.com/v2/resize:fit:720/0*0TLzPR5k59XzYheG)
 
-The FreshBasket project provides a solid foundation for building an online grocery delivery platform. You can customize and extend the application based on your specific requirements. Here are a few areas you might consider:
+The Grocery_Store project provides a solid foundation for building an online grocery delivery platform. You can customize and extend the application based on your specific requirements. Here are a few areas you might consider:
 
 - **UI/UX Design:** Modify the frontend templates and styles to match your brand identity and enhance the user experience.
 - **Payment Integration:** Integrate a payment gateway to enable secure online payments.
@@ -113,7 +113,7 @@ During the development of the Grocery_Store project, several key accomplishments
 ---
 ## Technical Challenges
 
-While building the FreshBasket application, some technical challenges were encountered:
+While building the Grocery_Store application, some technical challenges were encountered:
 
 1. Implementing secure user authentication and password hashing.
 2. Optimizing the application for scalability and performance.
