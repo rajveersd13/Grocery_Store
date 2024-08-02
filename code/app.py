@@ -1,6 +1,6 @@
 from flask import Flask
-from appl.database import db
-
+#from appl.database import db
+from code.appl.database import db
 def create_app():
     app = Flask(__name__)
     app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db.sqlite3"
