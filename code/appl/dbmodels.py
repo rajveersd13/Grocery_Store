@@ -1,4 +1,4 @@
-from appl.database import db
+from code.appl.database import db
 from flask_sqlalchemy import SQLAlchemy
 from datetime import date
 
