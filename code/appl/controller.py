@@ -3,10 +3,10 @@ from flask import request
 from flask import redirect
 from flask import session 
 from flask import current_app as app
-from appl.database import db
-from appl.dbmodels import User 
-from appl.dbmodels import Product 
-from appl.dbmodels import Purchases
+from code.appl.database import db
+from code.appl.dbmodels import User 
+from code.appl.dbmodels import Product 
+from code.appl.dbmodels import Purchases
 from passlib.hash import pbkdf2_sha256 as passhash
 import json
 
