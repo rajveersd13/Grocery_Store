@@ -15,7 +15,8 @@ def create_app():
 
 app = create_app()
 
-from appl.controller import *
+#from appl.controller import *
+from code.appl.controller import *
 
 if __name__ == "__main__":
     db.create_all()
